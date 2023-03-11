@@ -12,6 +12,9 @@
         android:theme="@style/Theme.AdoPaws"
         tools:targetApi="31">
         <activity
+            android:name=".Perfil_Mascota"
+            android:exported="false" />
+        <activity
             android:name=".Home"
             android:exported="false"
             android:label="@string/title_activity_home"
