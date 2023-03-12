@@ -37,7 +37,7 @@
 
         <Spinner
             android:id="@+id/sp_dia"
-            android:layout_width="60dp"
+            android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:background="@drawable/round_spinner"
             android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
@@ -48,7 +48,7 @@
 
         <Spinner
             android:id="@+id/sp_mes"
-            android:layout_width="60dp"
+            android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:background="@drawable/round_spinner"
             android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
@@ -59,7 +59,7 @@
 
         <Spinner
             android:id="@+id/sp_año"
-            android:layout_width="60dp"
+            android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:background="@drawable/round_spinner"
             android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
