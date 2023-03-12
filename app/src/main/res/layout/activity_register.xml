@@ -20,11 +20,12 @@
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:hint="@string/usuario"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:background="@drawable/round_text"
         android:layout_gravity="center"
         android:layout_marginTop="60dp"
-        android:paddingVertical="15dp"
+        android:paddingHorizontal="@dimen/input_margin"
+        android:textColor="@color/black"
         />
 
     <GridLayout
@@ -74,13 +75,13 @@
         android:id="@+id/et_email"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:hint="@string/email"
-        android:background="@drawable/round_text"
-        android:inputType="textEmailAddress"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
+        android:background="@drawable/round_text"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
         android:paddingHorizontal="@dimen/input_margin"
-        />
+        android:textColor="@color/black" />
 
     <EditText
         android:id="@+id/et_password"
@@ -91,7 +92,8 @@
         android:inputType="textPassword"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
-        android:paddingHorizontal="@dimen/input_margin"/>
+        android:paddingHorizontal="@dimen/input_margin"
+        android:textColor="@color/black"/>
 
 
     <Button

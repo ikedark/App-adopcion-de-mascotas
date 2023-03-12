@@ -25,6 +25,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="60dp"
         android:paddingHorizontal="@dimen/input_margin"
+        android:textColor="@color/black"
         />
 
     <EditText
@@ -36,7 +37,8 @@
         android:inputType="textPassword"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
-        android:paddingHorizontal="@dimen/input_margin"/>
+        android:paddingHorizontal="@dimen/input_margin"
+        android:textColor="@color/black"/>
     
     <Button
         android:id="@+id/btn_login"

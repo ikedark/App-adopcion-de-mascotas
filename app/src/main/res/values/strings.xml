@@ -8,7 +8,7 @@
     <string name="regist"><u>Registrate</u></string>
     <string name="ingresarFacebook">Ingresar con Facebook</string>
     <string name="ingresarGoogle">Ingresar con Google</string>
-    
+
     <string name="usuario">Nombre de usuario</string>
     <string name="crearCuenta">Crear cuenta</string>
     <string name="pregunta2">¿Ya tienes una cuenta?</string>
@@ -22,7 +22,7 @@
     <string name="historia">Historia</string>
     <string name="salud">Salud</string>
     <string name="contacto">Contacto</string>
-    
+
     <string-array name="Día">
         <item>01</item>
         <item>02</item>
