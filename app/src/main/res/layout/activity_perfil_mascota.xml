@@ -9,10 +9,150 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@color/gray">
 
-        <
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_regresar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="@dimen/input_image"
+                android:layout_marginRight="@dimen/input_image"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/back"
+                android:scaleType="fitCenter"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_reaction"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="130dp"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/corazon2"
+                android:scaleType="fitCenter"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_perfilMasocta"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:src="@drawable/perro"
+            android:layout_marginTop="60dp"/>
+        
+        <TextView
+            android:id="@+id/tv_nombreMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_margin"
+            android:text="@string/nombre_mascota"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/tv_sexoMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/sexo_mascota"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:textAllCaps="true"
+            android:textAlignment="center"/>
 
     </LinearLayout>
+    
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="50dp">
+
+        <Button
+            android:id="@+id/btn_perfil"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/perfil"
+            android:textColor="@color/white"
+            android:background="@drawable/round_butonlogin"
+            android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
+            android:layout_marginRight="@dimen/perfilMascota_buttons_margin"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            android:textSize="15sp"
+            android:layout_marginTop="@dimen/perfilMascota_buttons_margin"
+            />
+
+        <Button
+            android:id="@+id/btn_historia"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/historia"
+            android:textColor="@color/white"
+            android:background="@drawable/round_butonlogin"
+            android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
+            android:layout_marginRight="@dimen/perfilMascota_buttons_margin"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            android:textSize="15sp"
+            android:layout_marginTop="@dimen/perfilMascota_buttons_margin"/>
+
+        <Button
+            android:id="@+id/btn_salud"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/salud"
+            android:textColor="@color/white"
+            android:background="@drawable/round_butonlogin"
+            android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
+            android:layout_marginRight="@dimen/perfilMascota_buttons_margin"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            android:textSize="15sp"
+            android:layout_marginTop="@dimen/perfilMascota_buttons_margin"/>
+
+        <Button
+            android:id="@+id/btn_contacto"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/contacto"
+            android:textColor="@color/white"
+            android:background="@drawable/round_butonlogin"
+            android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
+            android:layout_marginRight="@dimen/perfilMascota_buttons_margin"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            android:textSize="15sp"
+            android:layout_marginTop="@dimen/perfilMascota_buttons_margin"/>
+
+    </GridLayout>
 
 </LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/crema"
+    tools:context=".Register">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@color/black"
+        android:layout_marginTop="90dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/et_nombreUsuario"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="@string/usuario"
+        android:inputType="textPersonName"
+        android:background="@drawable/round_text"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:paddingVertical="15dp"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:layout_marginTop="25dp"
+        android:paddingHorizontal="50dp"
+        android:layout_gravity="center">
+
+        <Spinner
+            android:id="@+id/sp_dia"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/round_spinner"
+            android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
+            android:layout_marginRight="@dimen/perfilMascota_buttons_margin"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            android:entries="@array/Día" />
+
+        <Spinner
+            android:id="@+id/sp_mes"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/round_spinner"
+            android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
+            android:layout_marginRight="@dimen/perfilMascota_buttons_margin"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            android:entries="@array/Mes" />
+
+        <Spinner
+            android:id="@+id/sp_año"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/round_spinner"
+            android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
+            android:layout_marginRight="@dimen/perfilMascota_buttons_margin"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            android:entries="@array/Año" />
+
+    </GridLayout>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="@string/email"
+        android:background="@drawable/round_text"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:paddingHorizontal="@dimen/input_margin"
+        />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="@string/contraseña"
+        android:background="@drawable/round_text"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:paddingHorizontal="@dimen/input_margin"/>
+
+
+    <Button
+        android:id="@+id/btn_creaCuenta"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:text="@string/crearCuenta"
+        android:background="@drawable/round_butonlogin"
+        android:layout_gravity="center"
+        android:layout_marginTop="65dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/pregunta2"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="65dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/iniciaSesión"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    </LinearLayout>
+
+</LinearLayout>
