@@ -4,7 +4,8 @@
     <string name="email">Correo electrónico</string>
     <string name="contraseña">Contraseña</string>
     <string name="iniciarSesion">Iniciar Sesión</string>
-    <string name="pregunta">¿No tienes cuenta? Registrate</string>
+    <string name="pregunta">¿No tienes cuenta?</string>
+    <string name="regist"><u>Registrate</u></string>
     <string name="ingresarFacebook">Ingresar con Facebook</string>
     <string name="ingresarGoogle">Ingresar con Google</string>
     
