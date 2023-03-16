@@ -2,10 +2,10 @@
 <font-family xmlns:android="http://schemas.android.com/apk/res/android">
     <font
         android:fontStyle="normal"
-        android:font="Baloo2-Regular"
+        android:font="@font/baloo"
         />
     <font
         android:fontStyle="normal"
-        android:font="NexaDemo-Light"
+        android:font="@font/nexa"
         />
 </font-family>
