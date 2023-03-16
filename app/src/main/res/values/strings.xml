@@ -9,6 +9,8 @@
     <string name="ingresarFacebook">Ingresar con Facebook</string>
     <string name="ingresarGoogle">Ingresar con Google</string>
 
+    <string name="dialogo">Crea una cuenta de AdoPaws</string>
+    <string name="ingresa">Ingresa tu nombre</string>
     <string name="usuario">Nombre de usuario</string>
     <string name="crearCuenta">Crear cuenta</string>
     <string name="pregunta2">¿Ya tienes una cuenta?</string>

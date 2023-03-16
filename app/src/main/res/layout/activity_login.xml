@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/crema"
+    android:background="@color/beige"
     tools:context=".Login">
 
     <ImageView
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:src="@color/black"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo_texto"
         android:layout_marginTop="60dp"
         android:layout_gravity="center"/>
 
@@ -43,10 +44,13 @@
     <Button
         android:id="@+id/btn_login"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:text="@string/iniciarSesion"
         android:background="@drawable/round_butonlogin"
         android:textColor="@color/white"
+        android:fontFamily="@font/baloo"
+        android:textAllCaps="false"
+        android:textSize="18sp"
         android:layout_gravity="center"
         android:layout_marginTop="35dp"
         />
@@ -80,20 +84,24 @@
 
     <Button
         android:id="@+id/btn_Facebook"
-        android:layout_width="280dp"
+        android:layout_width="250dp"
         android:layout_height="40dp"
+        android:fontFamily="@font/baloo"
         android:text="@string/ingresarFacebook"
-        android:background="@drawable/round_butonlogin"
+        android:textSize="10sp"
+        android:background="@drawable/round_buttonsocial"
         android:layout_gravity="center"
         android:layout_marginTop="35dp"
         />
 
     <Button
         android:id="@+id/btn_Google"
-        android:layout_width="280dp"
+        android:layout_width="250dp"
         android:layout_height="40dp"
+        android:fontFamily="@font/baloo"
         android:text="@string/ingresarGoogle"
-        android:background="@drawable/round_butonlogin"
+        android:textSize="10sp"
+        android:background="@drawable/round_buttonsocial"
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/input_margin"
         />
