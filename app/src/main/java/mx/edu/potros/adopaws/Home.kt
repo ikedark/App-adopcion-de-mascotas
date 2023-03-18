@@ -25,7 +25,12 @@ class Home : AppCompatActivity() {
     }
 
     fun agregarMascota() {
-        lista.add(Mascota("Tiana", R.drawable.Tiana, "Hembra", 183))
+        lista.add(Mascota("TIANA", R.drawable.tiana, "Hembra", 183))
+        lista.add(Mascota("BRUNO", R.drawable.bruno, "Macho", 230))
+        lista.add(Mascota("RESACA", R.drawable.resaca, "Hembra", 108))
+        lista.add(Mascota("TORIBIO", R.drawable.toribio, "Macho", 321))
+        lista.add(Mascota("PECHOCHO", R.drawable.pechocho, "Macho", 297))
+        lista.add(Mascota("DAISY", R.drawable.daisy, "Hembra", 250))
     }
 
     private class AdaptadorMascotas: BaseAdapter {
