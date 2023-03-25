@@ -15,8 +15,8 @@
         android:background="@color/salmon">
 
         <ImageButton
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/Regresar"
             android:scaleType="fitXY"
             android:layout_gravity="center"
@@ -27,10 +27,160 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/configuracionGeneral"
-            android:fontFamily="sans-serif-black"
-            android:textSize="20sp"
-            android:textColor="@color/white_smoak"/>
+            android:fontFamily="@font/nexa"
+            android:textSize="24sp"
+            android:textColor="@color/white_smoak"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="10dp"/>
 
     </LinearLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="70dp"
+        android:text="@string/cuenta"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="55dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"
+        android:text="@string/cambiar_correo"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="55dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"
+        android:text="@string/cambiar_contraseña"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp"/>
+    <View
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:text="@string/perfil_usuario"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginLeft="55dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"
+        android:text="@string/cambiar_imagen_perfil"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="55dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"
+        android:text="@string/cambiar_nombre"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp"/>
+    <View
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:text="@string/idioma_aplicacion"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginLeft="55dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"
+        android:text="@string/idioma_elegido"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginLeft="55dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"
+        android:text="@string/cambiar_tamaño_letra"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp"/>
+    <View
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:text="@string/ayuda"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="55dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"
+        android:text="@string/centros_ayuda"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="55dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"
+        android:text="@string/contactanos"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="55dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"
+        android:text="@string/politica_privacidad"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp"/>
+    <View
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="@color/black"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="190dp"
+        android:text="Cerrar sesión"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/nexa"
+        android:background="@drawable/round_butonlogin"/>
+
 
 </LinearLayout>
