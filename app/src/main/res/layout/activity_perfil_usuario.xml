@@ -48,6 +48,7 @@
             android:src="@drawable/jolee"/>
 
         <TextView
+            android:id="@+id/tv_nombre_usuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Jo Lee"
@@ -89,14 +90,15 @@
     <ListView
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="298dp"/>
+        android:layout_height="452dp"/>
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:numColumns="5"
         android:layout_gravity="center"
-        android:background="@color/orange">
+        android:background="@color/orange"
+        android:layout_marginTop="5dp">
 
         <ImageButton
             android:layout_width="60dp"
