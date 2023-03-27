@@ -24,6 +24,7 @@
     <string name="historia">Historia</string>
     <string name="salud">Salud</string>
     <string name="contacto">Contacto</string>
+    <string name="iniciarChat">Iniciar Chat</string>
 
     <string-array name="Día">
         <item>01</item>

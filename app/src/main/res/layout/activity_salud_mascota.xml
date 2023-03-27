@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Perfil_Mascota">
+    tools:context=".Salud_Mascota">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -47,7 +47,7 @@
                 android:src="@drawable/corazon2"
                 android:scaleType="fitCenter"/>
         </LinearLayout>
-        
+
     </LinearLayout>
 
     <ScrollView
@@ -174,35 +174,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nombre:"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="60dp"/>
-
-                <TextView
-                    android:id="@+id/et_name_pet"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="DROSS"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="10dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Edad:"
+                    android:text="General:"
                     android:textStyle="bold"
                     android:textSize="18sp"
                     android:textColor="@color/black"
@@ -213,7 +185,7 @@
                     android:id="@+id/tv_edad_pet"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Adulto, 3 años"
+                    android:text="Sano"
                     android:textStyle="normal"
                     android:textSize="15sp"
                     android:textColor="@color/black"
@@ -230,7 +202,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sexo:"
+                    android:text="Enfermedades:"
                     android:textStyle="bold"
                     android:textSize="18sp"
                     android:textColor="@color/black"
@@ -241,7 +213,7 @@
                     android:id="@+id/tv_sexo_pet"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Macho"
+                    android:text="No tiene"
                     android:textStyle="normal"
                     android:textSize="15sp"
                     android:textColor="@color/black"
@@ -258,7 +230,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Raza:"
+                    android:text="Vacunas:"
                     android:textStyle="bold"
                     android:textSize="18sp"
                     android:textColor="@color/black"
@@ -269,7 +241,7 @@
                     android:id="@+id/tv_raza_pet"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Perro,mestizo"
+                    android:text="Todas"
                     android:textStyle="normal"
                     android:textSize="15sp"
                     android:textColor="@color/black"
@@ -286,7 +258,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tamaño:"
+                    android:text="Cuidados especiales:"
                     android:textStyle="bold"
                     android:textSize="18sp"
                     android:textColor="@color/black"
@@ -297,7 +269,7 @@
                     android:id="@+id/tv_tamanio_pet"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mediano"
+                    android:text="No requiere"
                     android:textStyle="normal"
                     android:textSize="15sp"
                     android:textColor="@color/black"
@@ -314,7 +286,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Colores:"
+                    android:text="Medicamentos:"
                     android:textStyle="bold"
                     android:textSize="18sp"
                     android:textColor="@color/black"
@@ -325,7 +297,7 @@
                     android:id="@+id/tv_colores_pet"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Negro con blanco"
+                    android:text="No requiere"
                     android:textStyle="normal"
                     android:textSize="15sp"
                     android:textColor="@color/black"
@@ -342,7 +314,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Personalidad:"
+                    android:text="Alergias:"
                     android:textStyle="bold"
                     android:textSize="18sp"
                     android:textColor="@color/black"
@@ -353,7 +325,7 @@
                     android:id="@+id/tv_personalidad_pet"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Juguetón,enérgico,chipilón."
+                    android:text="Cacahuates"
                     android:textStyle="normal"
                     android:textSize="15sp"
                     android:textColor="@color/black"
@@ -361,96 +333,6 @@
                     android:layout_marginLeft="10dp"/>
 
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Social:"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="60dp"/>
-
-                <TextView
-                    android:id="@+id/tv_social_pet"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Amigable con los niños, perros y gatos"
-                    android:textStyle="normal"
-                    android:textSize="15sp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="10dp"/>
-
-            </LinearLayout>
-            <GridLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:columnCount="3"
-                android:layout_marginTop="30dp"
-                android:paddingHorizontal="20dp">
-
-                <ImageView
-                    android:id="@+id/iv_perfilMascota1"
-                    android:layout_width="120dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="25dp"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/dross_rescate1" />
-
-                <ImageView
-                    android:id="@+id/iv_perfilMascota2"
-                    android:layout_width="120dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="25dp"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/dross_rescate2" />
-
-                <ImageView
-                    android:id="@+id/iv_perfilMascota3"
-                    android:layout_width="120dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/dross_rescate3"
-                    android:layout_marginTop="25dp"/>
-
-                <ImageView
-                    android:id="@+id/iv_perfilMascota4"
-                    android:layout_width="120dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/dross_rescate4"
-                    android:layout_marginTop="25dp"/>
-
-                <ImageView
-                    android:id="@+id/iv_perfilMascota5"
-                    android:layout_width="120dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/dross_rescate5"
-                    android:layout_marginTop="25dp"/>
-
-                <ImageView
-                    android:id="@+id/iv_perfilMascota6"
-                    android:layout_width="120dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/dross_rescate6"
-                    android:layout_marginTop="25dp"/>
-
-            </GridLayout>
 
         </LinearLayout>
     </ScrollView>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Perfil_Mascota">
+    tools:context=".Historia_Mascota">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -47,7 +47,7 @@
                 android:src="@drawable/corazon2"
                 android:scaleType="fitCenter"/>
         </LinearLayout>
-        
+
     </LinearLayout>
 
     <ScrollView
@@ -171,49 +171,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Nombre:"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="60dp"/>
 
                 <TextView
-                    android:id="@+id/et_name_pet"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/tv_historia_pet"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="DROSS"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="10dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Edad:"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="60dp"/>
-
-                <TextView
-                    android:id="@+id/tv_edad_pet"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Adulto, 3 años"
+                    android:text="Dross proviene de unas alcantarillas de la ciudad. Fue rescatado por los bomberos después de interceptar sus ladridos que provenían del subsuelo. Estaba lastimado de una de sus patitas, así que de inmediato fue llevado al veterinario más cercano. Afortunadamente, no era nada grave, así que se recuperó rápidamente, siempre se comportó muy juguetón y risueño buscando las caricias de las personas que lo rodeaban"
+                    android:layout_margin="20dp"
                     android:textStyle="normal"
                     android:textSize="15sp"
                     android:textColor="@color/black"
@@ -222,173 +186,6 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sexo:"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="60dp"/>
-
-                <TextView
-                    android:id="@+id/tv_sexo_pet"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Macho"
-                    android:textStyle="normal"
-                    android:textSize="15sp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="10dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Raza:"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="60dp"/>
-
-                <TextView
-                    android:id="@+id/tv_raza_pet"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Perro,mestizo"
-                    android:textStyle="normal"
-                    android:textSize="15sp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="10dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tamaño:"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="60dp"/>
-
-                <TextView
-                    android:id="@+id/tv_tamanio_pet"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Mediano"
-                    android:textStyle="normal"
-                    android:textSize="15sp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="10dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Colores:"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="60dp"/>
-
-                <TextView
-                    android:id="@+id/tv_colores_pet"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Negro con blanco"
-                    android:textStyle="normal"
-                    android:textSize="15sp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="10dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Personalidad:"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="60dp"/>
-
-                <TextView
-                    android:id="@+id/tv_personalidad_pet"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Juguetón,enérgico,chipilón."
-                    android:textStyle="normal"
-                    android:textSize="15sp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="10dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Social:"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="60dp"/>
-
-                <TextView
-                    android:id="@+id/tv_social_pet"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Amigable con los niños, perros y gatos"
-                    android:textStyle="normal"
-                    android:textSize="15sp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="10dp"/>
-
-            </LinearLayout>
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -397,7 +194,7 @@
                 android:paddingHorizontal="20dp">
 
                 <ImageView
-                    android:id="@+id/iv_perfilMascota1"
+                    android:id="@+id/iv_historiaMascota1"
                     android:layout_width="120dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
@@ -406,7 +203,7 @@
                     android:src="@drawable/dross_rescate1" />
 
                 <ImageView
-                    android:id="@+id/iv_perfilMascota2"
+                    android:id="@+id/iv_historiaMascota2"
                     android:layout_width="120dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
@@ -415,7 +212,7 @@
                     android:src="@drawable/dross_rescate2" />
 
                 <ImageView
-                    android:id="@+id/iv_perfilMascota3"
+                    android:id="@+id/iv_historiaMascota3"
                     android:layout_width="120dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
@@ -424,7 +221,7 @@
                     android:layout_marginTop="25dp"/>
 
                 <ImageView
-                    android:id="@+id/iv_perfilMascota4"
+                    android:id="@+id/iv_historiaMascota4"
                     android:layout_width="120dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
@@ -433,7 +230,7 @@
                     android:layout_marginTop="25dp"/>
 
                 <ImageView
-                    android:id="@+id/iv_perfilMascota5"
+                    android:id="@+id/iv_historiaMascota5"
                     android:layout_width="120dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
@@ -442,7 +239,7 @@
                     android:layout_marginTop="25dp"/>
 
                 <ImageView
-                    android:id="@+id/iv_perfilMascota6"
+                    android:id="@+id/iv_historiaMascota6"
                     android:layout_width="120dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
@@ -454,6 +251,4 @@
 
         </LinearLayout>
     </ScrollView>
-
-
 </LinearLayout>
