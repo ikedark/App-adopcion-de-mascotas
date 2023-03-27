@@ -17,7 +17,7 @@
         <ImageButton
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/Regresar"
+            android:src="@drawable/regresar"
             android:scaleType="fitXY"
             android:layout_gravity="center"
             android:layout_marginLeft="25dp"

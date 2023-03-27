@@ -22,5 +22,7 @@ class Register : AppCompatActivity() {
             startActivity(intent)
         }
 
+
+
     }
 }

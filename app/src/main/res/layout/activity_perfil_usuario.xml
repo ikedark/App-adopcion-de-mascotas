@@ -35,7 +35,7 @@
                 android:src="@drawable/configuraciones"
                 android:scaleType="fitXY"
                 android:background="@android:color/transparent"
-                android:layout_marginLeft="40dp"/>
+                android:layout_marginLeft="35dp"/>
 
         </LinearLayout>
         
@@ -65,7 +65,7 @@
         android:layout_height="wrap_content"
         android:columnCount="2"
         android:layout_gravity="center"
-        android:paddingHorizontal="50dp">
+        android:paddingHorizontal="30dp">
 
         <Button
             android:layout_width="wrap_content"
