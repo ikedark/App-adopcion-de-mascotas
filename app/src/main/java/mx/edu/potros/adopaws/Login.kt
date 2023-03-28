@@ -6,6 +6,8 @@ import android.util.Log
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import com.facebook.CallbackManager
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -18,12 +20,13 @@ import com.google.android.gms.tasks.Task
 
 class Login : AppCompatActivity() {
 
-    /*lateinit var callbackManager: CallbackManager*/
+    lateinit var callbackManager: CallbackManager
     lateinit var mGoogleSignInClient: GoogleSignInClient
     val RC_SIGN_IN = 343
     val LOG_OUT = 234
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        installSplashScreen()
         setContentView(R.layout.activity_login)
 
 
@@ -40,7 +43,7 @@ class Login : AppCompatActivity() {
             val intent: Intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
-
+        // Google things
         // Configure sign-in to request the user's ID, email address, and basic
         // profile. ID and basic profile are included in DEFAULT_SIGN_IN.
         // Configure sign-in to request the user's ID, email address, and basic
