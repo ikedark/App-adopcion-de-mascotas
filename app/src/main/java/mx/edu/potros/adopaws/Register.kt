@@ -9,34 +9,17 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.DatePicker
 import android.widget.EditText
+import android.widget.ImageButton
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.DialogFragment
 import com.google.android.material.internal.ContextUtils.getActivity
 
-class DatePickerFragment : DialogFragment() {
 
-    private var listener: DatePickerDialog.OnDateSetListener? = null
-
-    override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-        val c = Calendar.getInstance()
-        val year = c.get(Calendar.YEAR)
-        val month = c.get(Calendar.MONTH)
-        val day = c.get(Calendar.DAY_OF_MONTH)
-
-        return DatePickerDialog(activity, listener, year, month, day)
-    }
-
-    companion object {
-        fun newInstance(listener: DatePickerDialog.OnDateSetListener): DatePickerFragment {
-            val fragment = DatePickerFragment()
-            fragment.listener = listener
-            return fragment
-        }
-    }
-
-}
 
 class Register : AppCompatActivity() {
+    var fechaS: String = ""
+    lateinit var eDate: EditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
@@ -45,26 +28,31 @@ class Register : AppCompatActivity() {
         val sp_mes: Spinner = findViewById(R.id.sp_mes)
         val sp_anio: Spinner = findViewById(R.id.sp_año)*/
 
-        val fecha : EditText = findViewById(R.id.fecha_nacimiento)
-
-        fecha.setOnClickListener { showDatePickerDialog() }
+        eDate  = findViewById(R.id.et_Date)
+        eDate.setOnClickListener { showDatePickerDialog() }
 
         val btnpregunta : Button = findViewById(R.id.btn_iniciaSesión)
+        val btnRegistrar : Button = findViewById(R.id.btn_creaCuenta)
 
         btnpregunta.setOnClickListener {
             val intent: Intent = Intent(this, Login::class.java)
+            startActivity(intent)
+        }
+
+        btnRegistrar.setOnClickListener {
+            val intent: Intent = Intent(this, Home::class.java)
+            Toast.makeText(this, "Cuenta creada",Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
     }
 
 
     private fun showDatePickerDialog() {
-        val newFragment = DatePickerFragment.newInstance(DatePickerDialog.OnDateSetListener { _, year, month, day ->
-            // +1 because January is zero
-            val selectedDate = day.toString() + " / " + (month + 1) + " / " + year
-            etBirthDate.setText(selectedDate)
-        })
+        val datePicker = DatePickerFragment { day, month, year -> onDateSelected(day, month, year) }
+        datePicker.show(supportFragmentManager, "datePicker")
+    }
 
-        newFragment.show(supportFragmentManager, "datePicker")
+    fun onDateSelected(day:Int, month:Int, year:Int){
+        eDate.setText("$day/$month/$year")
     }
 }

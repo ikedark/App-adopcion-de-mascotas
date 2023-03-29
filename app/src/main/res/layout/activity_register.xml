@@ -47,62 +47,20 @@
         />
 
     <EditText
-        android:id="@+id/fecha_nacimiento"
+        android:id="@+id/et_Date"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:background="@drawable/round_text"
+        android:textColor="@color/black"
         android:inputType="date"
         android:focusable="false"
-        android:clickable="true"
+        android:clickable="false"
         android:hint="@string/fecha_nacimiento"
         android:paddingHorizontal="15dp"
         android:layout_marginTop="25dp"
         android:layout_gravity="center"
         android:maxLines="1" />
 
-    <!--<GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:columnCount="3"
-        android:layout_marginTop="25dp"
-        android:paddingHorizontal="50dp"
-        android:layout_gravity="center">
-
-        <Spinner
-            android:id="@+id/sp_dia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/round_spinner"
-            android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
-            android:layout_marginRight="@dimen/perfilMascota_buttons_margin"
-            android:layout_gravity="fill_horizontal"
-            android:layout_columnWeight="1"
-            android:entries="@array/Día" />
-
-        <Spinner
-            android:id="@+id/sp_mes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/round_spinner"
-            android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
-            android:layout_marginRight="@dimen/perfilMascota_buttons_margin"
-            android:layout_gravity="fill_horizontal"
-            android:layout_columnWeight="1"
-            android:entries="@array/Mes" />
-
-        <Spinner
-            android:id="@+id/sp_año"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/round_spinner"
-            android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
-            android:layout_marginRight="@dimen/perfilMascota_buttons_margin"
-            android:layout_gravity="fill_horizontal"
-            android:layout_columnWeight="1"
-            android:entries="@array/Año" />
-
-    </GridLayout>
--->
     <EditText
         android:id="@+id/et_email"
         android:layout_width="300dp"

@@ -18,9 +18,9 @@ import com.google.android.gms.tasks.Task
 import com.squareup.picasso.Picasso
 
 class perfilUsuario : AppCompatActivity() {
-    lateinit var mGoogleSignInClient: GoogleSignInClient
-    val RC_SIGN_IN = 343
-    val LOG_OUT = 234
+//    lateinit var mGoogleSignInClient: GoogleSignInClient
+//    val RC_SIGN_IN = 343
+//    val LOG_OUT = 234
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perfil_usuario)
@@ -31,11 +31,11 @@ class perfilUsuario : AppCompatActivity() {
 
         val bundle = intent.extras
 
-        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestEmail()
-            .build()
+//        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+//            .requestEmail()
+//            .build()
 
-        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
+//        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
         if (bundle != null){
 //            val profileImage = bundle.getInt("profileImage")
@@ -49,17 +49,31 @@ class perfilUsuario : AppCompatActivity() {
         val btnAvisos: ImageButton = findViewById(R.id.btn_warnings)
         val btnMensajes: ImageButton = findViewById(R.id.btn_messages)
         val btnProfile: ImageButton = findViewById(R.id.btn_profile)
+        val btnConfig: ImageButton = findViewById(R.id.btn_Config)
 
         btnHome.setOnClickListener {
             val intent: Intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
+
         btnProfile.setOnClickListener {
             val intent: Intent = Intent(this, perfilUsuario::class.java)
             startActivity(intent)
         }
 
+        btnAvisos.setOnClickListener {
+            val intent: Intent = Intent(this, buscarMascota::class.java)
+            startActivity(intent)
+        }
+
+        btnConfig.setOnClickListener {
+            val intent: Intent = Intent(this, configuracionGeneral::class.java)
+            startActivity(intent)
+        }
+
     }
+
+
 
 //    override fun onStart() {
 //        super.onStart()

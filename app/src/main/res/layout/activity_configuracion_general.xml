@@ -20,13 +20,14 @@
 
         <!--ImageButton Regresar (Perfil de Usuario)-->
         <ImageButton
+            android:id="@+id/btn_Regresar"
             android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/regresar"
-            android:scaleType="fitXY"
+            android:layout_height="40dp"
             android:layout_gravity="center"
             android:layout_marginLeft="25dp"
-            android:background="@android:color/transparent"/>
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/regresar" />
         <!--TextView Configuración General-->
         <TextView
             android:layout_width="wrap_content"
@@ -182,8 +183,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="190dp"
-        android:text="Cerrar sesión"
+        android:layout_marginTop="60dp"
+        android:text="@string/cerrar_sesion"
         android:textSize="20sp"
         android:textAllCaps="false"
         android:fontFamily="@font/nexa"

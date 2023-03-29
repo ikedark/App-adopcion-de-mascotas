@@ -25,7 +25,7 @@
     <string name="salud">Salud</string>
     <string name="contacto">Contacto</string>
 
-<!--    <string-array name="Día">
+    <!--    <string-array name="Día">
         <item>01</item>
         <item>02</item>
         <item>03</item>
@@ -59,7 +59,7 @@
 
     <string name="mascotas_interes"><u>Mascotas de\ninterés</u></string>
     <string name="mascotas_adopcion"><u>Mascotas en\nadopción</u></string>
-    
+
     <string name="cuenta">Cuenta</string>
     <string name="perfil_usuario">Perfil de usuario</string>
     <string name="idioma_aplicacion">Idioma de la aplicación</string>
@@ -74,5 +74,36 @@
     <string name="centros_ayuda">Centros de ayuda</string>
     <string name="contactanos">Contáctanos</string>
     <string name="politica_privacidad">Política de privacidad</string>
+
+    <string name="cerrar_sesion">Cerrar sesión</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="confirm_logout">¿Estás seguro de que\nquieres cerrar sesión?</string>
+
+    <string name="question_notfound">¿Ninguno de ellos era el que buscabas? Entonces será mejor que generes un reporte</string>
+    <string name="seleccion_reporte">Selecciona de qué\n necesitas el reporte</string>
+
+    <string name="encotre_m">Encontré una mascota</string>
+    <string name="perdi_m">Se perdió mi mascota</string>
+
+    <string name="buscarMascota">Buscar mascota</string>
+    <string name="perdidos">Perdidos</string>
+    <string name="encontrados">Encontrados</string>
+
+    <string name="generarReporte">Generar reporte</string>
+    <string name="encabezado1">Rellena el formulario con la información necesaria sobre tu mascota</string>
+    <string name="encabezado2">Rellena el formulario con la información necesaria sobre el animal encontrado</string>
+    <string name="descripcion">Descripción general</string>
+    <string name="adjuntar_foto">Adjuntar foto</string>
+    <string name="donde_encontro">Dónde se encontró</string>
+    <string name="donde_perdido">Dónde se perdió</string>
+    <string name="cuando_encontro">Cuándo se encontró</string>
+    <string name="cuando_perdido">Cuándo se perdió</string>
+    <string name="nombre_mascota2">Nombre de la mascota</string>
+    <string name="numero_telefono">Número de celular</string>
+    <string name="reportar">Reportar</string>
+    <string name="msj_reporte">Después de reportar, se notificará a todos los\nusuarios de la zona.</string>
+
+    <string name="reporte_creado">Tu reporte se ha generado\ncon exito ¡suerte!</string>
+    <string name="btn_aceptar">Aceptar</string>
 
 </resources>
