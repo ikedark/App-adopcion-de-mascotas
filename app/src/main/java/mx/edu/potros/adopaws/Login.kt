@@ -32,13 +32,19 @@ class Login : AppCompatActivity() {
 
         // Inicio de sesión normal
         val btn_pregunta: Button = findViewById(R.id.btn_registrate)
-        val btn_iniciarSesion: Button = findViewById(R.id.btn_login)
+        var btn_iniciarSesion: Button = findViewById(R.id.btn_login) as Button
+
+        btn_iniciarSesion.setOnClickListener {
+            var intent: Intent = Intent(this, Home::class.java)
+            startActivity(intent)
+        }
 
         btn_pregunta.setOnClickListener {
             val intent: Intent = Intent(this, Register::class.java)
             startActivity(intent)
         }
 
+<<<<<<< HEAD
         btn_iniciarSesion.setOnClickListener {
             val intent: Intent = Intent(this, Home::class.java)
             startActivity(intent)
@@ -108,5 +114,7 @@ class Login : AppCompatActivity() {
             intent.putExtra("profileImage",acct.getPhotoUrl())
             startActivityForResult(intent,LOG_OUT)
         }
+=======
+>>>>>>> alberto
     }
 }

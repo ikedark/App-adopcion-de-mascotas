@@ -31,6 +31,7 @@
 
     </LinearLayout>
 
+<<<<<<< HEAD
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -44,6 +45,13 @@
 <!--        android:text="@string/cerrar_sesion"-->
 <!--        android:textSize="20sp"-->
 <!--        android:background="@drawable/round_button2"/>-->
+=======
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="605dp"
+        android:numColumns="1"/>
+>>>>>>> alberto
 
     <GridLayout
         android:layout_width="match_parent"
