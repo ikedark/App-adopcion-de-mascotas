@@ -108,13 +108,15 @@
                 android:layout_marginTop="30dp"
                 android:paddingHorizontal="50dp">
 
+
+
                 <Button
                     android:id="@+id/btn_perfil"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:text="@string/perfil"
                     android:textColor="@color/white"
-                    android:background="@drawable/round_button_profile"
+                    android:background="@drawable/button_selectable"
                     android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
                     android:layout_marginRight="@dimen/perfilMascota_buttons_margin"
                     android:layout_gravity="fill_horizontal"
@@ -128,7 +130,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/historia"
                     android:textColor="@color/white"
-                    android:background="@drawable/round_button_profile"
+                    android:background="@color/orange"
                     android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
                     android:layout_marginRight="@dimen/perfilMascota_buttons_margin"
                     android:layout_gravity="fill_horizontal"
@@ -142,7 +144,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/salud"
                     android:textColor="@color/white"
-                    android:background="@drawable/round_button_profile"
+                    android:background="@color/orange"
                     android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
                     android:layout_marginRight="@dimen/perfilMascota_buttons_margin"
                     android:layout_gravity="fill_horizontal"
@@ -156,7 +158,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/contacto"
                     android:textColor="@color/white"
-                    android:background="@drawable/round_button_profile"
+                    android:background="@color/orange"
                     android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
                     android:layout_marginRight="@dimen/perfilMascota_buttons_margin"
                     android:layout_gravity="fill_horizontal"
@@ -165,6 +167,7 @@
                     android:layout_marginTop="@dimen/perfilMascota_buttons_margin"/>
 
             </GridLayout>
+
 
             <LinearLayout
                 android:layout_width="wrap_content"
