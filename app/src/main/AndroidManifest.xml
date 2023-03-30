@@ -14,7 +14,6 @@
         android:theme="@style/Theme.AdoPaws"
         tools:targetApi="31">
         <activity
-<<<<<<< HEAD
             android:name=".generarReporte"
             android:exported="false" />
         <activity
@@ -26,15 +25,17 @@
             android:exported="false" />
         <activity
             android:name=".configuracionGeneral"
-=======
+            android:exported="false">
+        </activity>
+        <activity
             android:name=".Contacto_Mascota"
-            android:exported="false" />
+            android:exported="false">
+        </activity>
         <activity
             android:name=".Salud_Mascota"
             android:exported="false" />
         <activity
             android:name=".Historia_Mascota"
->>>>>>> alberto
             android:exported="false" />
         <activity
             android:name=".Home"

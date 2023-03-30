@@ -2,7 +2,7 @@
 <resources>
     <style name="Theme.CommuteSplashScreenTheme" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/salmon</item>
-        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_splashScreen</item>
         <item name="postSplashScreenTheme">@style/Theme.AdoPaws</item>
     </style>
 </resources>
