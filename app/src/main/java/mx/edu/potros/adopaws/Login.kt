@@ -44,7 +44,6 @@ class Login : AppCompatActivity() {
             startActivity(intent)
         }
 
-<<<<<<< HEAD
         btn_iniciarSesion.setOnClickListener {
             val intent: Intent = Intent(this, Home::class.java)
             startActivity(intent)
@@ -114,7 +113,5 @@ class Login : AppCompatActivity() {
             intent.putExtra("profileImage",acct.getPhotoUrl())
             startActivityForResult(intent,LOG_OUT)
         }
-=======
->>>>>>> alberto
     }
 }

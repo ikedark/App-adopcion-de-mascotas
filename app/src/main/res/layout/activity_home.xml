@@ -25,37 +25,26 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:src="@drawable/filter"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
             android:scaleType="fitCenter"
             android:backgroundTint="@android:color/transparent"/>
 
     </LinearLayout>
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-<!--    <Button-->
-<!--        android:id="@+id/btnLogout"-->
-<!--        android:layout_width="250dp"-->
-<!--        android:layout_height="60dp"-->
-<!--        android:layout_marginTop="20dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:text="@string/cerrar_sesion"-->
-<!--        android:textSize="20sp"-->
-<!--        android:background="@drawable/round_button2"/>-->
-
     <GridView
         android:id="@+id/gridView"
         android:layout_width="match_parent"
-        android:layout_height="605dp"
-        android:numColumns="1"/>
+        android:layout_height="662dp"
+        android:numColumns="1"
+        android:paddingHorizontal="10dp"/>
 
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:numColumns="5"
+        android:layout_marginTop="5dp"
         android:layout_gravity="center"
         android:background="@color/orange">
 
