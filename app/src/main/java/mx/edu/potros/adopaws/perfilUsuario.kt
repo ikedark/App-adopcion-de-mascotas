@@ -76,7 +76,7 @@ var lista: ArrayList<Mascota> = ArrayList<Mascota>()
         }
 
         btnAvisos.setOnClickListener {
-            var intent: Intent = Intent(this, buscarMascota::class.java)
+            var intent: Intent = Intent(this, Encontrar_Mascota::class.java)
             startActivity(intent)
         }
 

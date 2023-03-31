@@ -16,7 +16,7 @@ class Encontrar_Mascota : AppCompatActivity() {
         val emergenteGato: ImageView = findViewById(R.id.iv_mascotaGato)
 
         buttonPerdidos.setOnClickListener(){
-            var intent: Intent = Intent(this,Buscar_Mascota::class.java)
+            var intent: Intent = Intent(this,Encontrar_Mascota::class.java)
             startActivity(intent)
         }
 
@@ -42,7 +42,7 @@ class Encontrar_Mascota : AppCompatActivity() {
 //        }
 
         btnAvisos.setOnClickListener {
-            val intent: Intent = Intent(this, Buscar_Mascota::class.java)
+            val intent: Intent = Intent(this, Encontrar_Mascota::class.java)
             startActivity(intent)
         }
 

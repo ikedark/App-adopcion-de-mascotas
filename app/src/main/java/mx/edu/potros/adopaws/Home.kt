@@ -28,13 +28,6 @@ class Home : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        val buttonBuscarMascota: ImageButton = findViewById(R.id.btn_buscarMascota)
-
-        buttonBuscarMascota.setOnClickListener(){
-            var intent: Intent =Intent(this,Buscar_Mascota::class.java)
-            startActivity(intent)
-        }
-
         agregarMascota()
 
         val btnHome: ImageButton = findViewById(R.id.btn_home)
@@ -78,7 +71,7 @@ class Home : AppCompatActivity() {
 //        }
 
         btnAvisos.setOnClickListener {
-            val intent: Intent = Intent(this, buscarMascota::class.java)
+            val intent: Intent = Intent(this, Encontrar_Mascota::class.java)
             startActivity(intent)
         }
 

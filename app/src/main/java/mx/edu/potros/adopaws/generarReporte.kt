@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import androidx.appcompat.app.AlertDialog
+import kotlin.math.E
 
 class generarReporte : AppCompatActivity() {
     lateinit var fechaR : EditText
@@ -35,7 +36,7 @@ class generarReporte : AppCompatActivity() {
 
             if (btnAceptar != null) {
                 btnAceptar.setOnClickListener {
-                    val intent: Intent = Intent(this, buscarMascota::class.java)
+                    val intent: Intent = Intent(this, Encontrar_Mascota::class.java)
                     startActivity(intent)
                     dialog.dismiss()
                 }
@@ -44,7 +45,7 @@ class generarReporte : AppCompatActivity() {
 
 
         btnRegresar.setOnClickListener {
-            val intent: Intent = Intent(this, buscarMascota::class.java)
+            val intent: Intent = Intent(this, Encontrar_Mascota::class.java)
             startActivity(intent)
         }
     }

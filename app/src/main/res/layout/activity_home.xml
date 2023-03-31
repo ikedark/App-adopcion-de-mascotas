@@ -78,11 +78,7 @@
             android:layout_marginRight="10dp"
             />
         <ImageButton
-<<<<<<< HEAD
             android:id="@+id/btn_warnings"
-=======
-            android:id="@+id/btn_buscarMascota"
->>>>>>> alberto
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginTop="5dp"
