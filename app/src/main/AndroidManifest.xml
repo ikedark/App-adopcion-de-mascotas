@@ -14,23 +14,23 @@
         android:theme="@style/Theme.AdoPaws"
         tools:targetApi="31">
         <activity
+            android:name=".seleccionarUser"
+            android:exported="false" />
+        <activity
             android:name=".generarReporte"
             android:exported="false" />
         <activity
             android:name=".buscarMascota"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".perfilUsuario"
             android:exported="false" />
         <activity
             android:name=".configuracionGeneral"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".Contacto_Mascota"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".Salud_Mascota"
             android:exported="false" />

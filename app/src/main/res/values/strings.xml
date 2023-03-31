@@ -107,4 +107,9 @@
     <string name="reporte_creado">Tu reporte se ha generado\ncon exito ¡suerte!</string>
     <string name="btn_aceptar">Aceptar</string>
 
+    <string name="elige_cuenta">Elige una cuenta</string>
+    <string name="continuar">Para continuar usando AdoPaws</string>
+    <string name="agregar_cuenta">Agregar otra cuenta</string>
+    <string name="msj_eu">Para continuar, Google compartir tu nombre, dirección\nde correo electrónico y foto de perfil con AdoPaw. Antes\nde usar esta app, consulta su política de privacidad y las\ncondiciones del servicio</string>
+
 </resources>
