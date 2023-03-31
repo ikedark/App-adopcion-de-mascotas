@@ -14,7 +14,25 @@
         android:theme="@style/Theme.AdoPaws"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".seleccionarUser"
+=======
+            android:name=".Emergente_Gato"
+            android:exported="false"
+            android:theme="@style/Theme.AdoPaws.Neron"/>
+        <activity
+            android:name=".Emergente_Espanto"
+            android:exported="false"
+            android:theme="@style/Theme.AdoPaws.Neron" />
+        <activity
+            android:name=".Encontrar_Mascota"
+            android:exported="false" />
+        <activity
+            android:name=".Buscar_Mascota"
+            android:exported="false" />
+        <activity
+            android:name=".Contacto_Mascota"
+>>>>>>> alberto
             android:exported="false" />
         <activity
             android:name=".generarReporte"

@@ -58,8 +58,45 @@
         android:hint="@string/fecha_nacimiento"
         android:paddingHorizontal="15dp"
         android:layout_marginTop="25dp"
+<<<<<<< HEAD
         android:layout_gravity="center"
         android:maxLines="1" />
+=======
+        android:paddingHorizontal="50dp"
+        android:layout_gravity="center">
+
+        <Spinner
+            android:id="@+id/sp_dia"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/round_spinner"
+            android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
+            android:layout_marginRight="@dimen/perfilMascota_buttons_margin"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1" />
+
+        <Spinner
+            android:id="@+id/sp_mes"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/round_spinner"
+            android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
+            android:layout_marginRight="@dimen/perfilMascota_buttons_margin"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1" />
+
+        <Spinner
+            android:id="@+id/sp_año"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/round_spinner"
+            android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
+            android:layout_marginRight="@dimen/perfilMascota_buttons_margin"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"/>
+
+    </GridLayout>
+>>>>>>> alberto
 
     <EditText
         android:id="@+id/et_email"
