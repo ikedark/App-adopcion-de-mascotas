@@ -112,4 +112,7 @@
     <string name="agregar_cuenta">Agregar otra cuenta</string>
     <string name="msj_eu">Para continuar, Google compartir tu nombre, dirección\nde correo electrónico y foto de perfil con AdoPaw. Antes\nde usar esta app, consulta su política de privacidad y las\ncondiciones del servicio</string>
 
+    <string name="conversaciones">Conversaciones</string>
+    <string name="comunidades">Comunidades</string>
+    <string name="privados">Privados</string>
 </resources>

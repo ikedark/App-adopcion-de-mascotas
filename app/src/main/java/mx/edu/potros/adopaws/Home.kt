@@ -12,6 +12,7 @@ import android.widget.*
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import android.widget.Button
 import android.widget.ImageButton
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -35,6 +36,7 @@ class Home : AppCompatActivity() {
         val btnAvisos: ImageButton = findViewById(R.id.btn_warnings)
         val btnMensajes: ImageButton = findViewById(R.id.btn_messages)
         val btnProfile: ImageButton = findViewById(R.id.btn_profile)
+
 
         var gridview: GridView = findViewById(R.id.gridView) as GridView
 
@@ -60,10 +62,10 @@ class Home : AppCompatActivity() {
             startActivity(intent)
         }
 
-//        btnMensajes.setOnClickListener {
-//            val intent: Intent = Intent(this, Mensajes::class.java)
-//            startActivity(intent)
-//        }
+        btnMensajes.setOnClickListener {
+            val intent: Intent = Intent(this, conversaciones::class.java)
+            startActivity(intent)
+        }
 
         btnAvisos.setOnClickListener {
             val intent: Intent = Intent(this, buscarMascota::class.java)
@@ -172,5 +174,13 @@ class Home : AppCompatActivity() {
 
             return vista
         }
+
+
+
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_lateral,menu)
+        return super.onCreateOptionsMenu(menu)
     }
 }

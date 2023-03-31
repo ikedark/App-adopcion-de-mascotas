@@ -59,10 +59,10 @@ class buscarMascota : AppCompatActivity() {
             startActivity(intent)
         }
 
-//        btnMensajes.setOnClickListener {
-//            val intent: Intent = Intent(this, Mensajes::class.java)
-//            startActivity(intent)
-//        }
+        btnMensajes.setOnClickListener {
+            val intent: Intent = Intent(this, conversaciones::class.java)
+            startActivity(intent)
+        }
 
         btnAvisos.setOnClickListener {
             val intent: Intent = Intent(this, buscarMascota::class.java)
