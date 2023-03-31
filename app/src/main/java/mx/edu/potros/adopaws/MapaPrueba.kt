@@ -40,8 +40,20 @@ class MapaPrueba : AppCompatActivity(), OnMapReadyCallback, OnMyLocationButtonCl
 
     private fun createMarker() {
         val coordinates = LatLng(27.496218, -109.971497)
+        val coordinates2 = LatLng(27.482605, -109.957548)
+        val coordinates3 = LatLng(27.491404, -109.977105)
+        val coordinates4 = LatLng(27.514345, -109.942738)
+        val coordinates5 = LatLng(27.491888, -109.934804)
         val marker = MarkerOptions().position(coordinates).title("Veterinaria Nainari")
+        val marker2 = MarkerOptions().position(coordinates2).title("Veterinaria 200")
+        val marker3= MarkerOptions().position(coordinates3).title("Veterinaria Casa blanca")
+        val marker4= MarkerOptions().position(coordinates4).title("Veterinaria Norte")
+        val marker5= MarkerOptions().position(coordinates5).title("Veterinaria Centro")
         map.addMarker(marker)
+        map.addMarker(marker2)
+        map.addMarker(marker3)
+        map.addMarker(marker4)
+        map.addMarker(marker5)
         map.animateCamera(
             CameraUpdateFactory.newLatLngZoom(coordinates, 15f),
             1000,
