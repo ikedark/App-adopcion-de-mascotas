@@ -30,11 +30,15 @@
         <activity
             android:name=".Encontrar_Mascota"
             android:exported="false" />
+
         <activity
-            android:name=".Buscar_Mascota"
+            android:name=".Contacto_Mascota">
+        </activity>
+        <activity
+            android:name=".conversaciones"
             android:exported="false" />
         <activity
-            android:name=".Contacto_Mascota"
+            android:name=".seleccionarUser"
             android:exported="false" />
         <activity
             android:name=".generarReporte"
@@ -44,7 +48,10 @@
             android:exported="false" />
         <activity
             android:name=".configuracionGeneral"
-            android:exported="false"></activity>
+            android:exported="false" />
+        <activity
+            android:name=".Contacto_Mascota"
+            android:exported="false" />
         <activity
             android:name=".Salud_Mascota"
             android:exported="false" />

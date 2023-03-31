@@ -80,6 +80,11 @@ var lista: ArrayList<Mascota> = ArrayList<Mascota>()
             startActivity(intent)
         }
 
+        btnMensajes.setOnClickListener {
+            val intent: Intent = Intent(this, conversaciones::class.java)
+            startActivity(intent)
+        }
+
         btnConfig.setOnClickListener {
             var intent: Intent = Intent(this, configuracionGeneral::class.java)
             startActivity(intent)
