@@ -65,6 +65,11 @@ var lista: ArrayList<Mascota> = ArrayList<Mascota>()
             startActivity(intent)
         }
 
+        btnMapa.setOnClickListener {
+            val intent: Intent = Intent( this, MapaPrueba::class.java)
+            startActivity(intent)
+        }
+
         btnProfile.setOnClickListener {
             var intent: Intent = Intent(this, perfilUsuario::class.java)
             startActivity(intent)
