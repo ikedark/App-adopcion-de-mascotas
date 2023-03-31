@@ -71,6 +71,7 @@
         android:paddingHorizontal="30dp">
 
         <Button
+            android:id="@+id/btn_mascota_interes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/mascotas_interes"
@@ -80,6 +81,7 @@
             android:background="@android:color/transparent"/>
 
         <Button
+            android:id="@+id/btn_mascota_adopcion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/mascotas_adopcion"

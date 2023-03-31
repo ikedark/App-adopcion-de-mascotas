@@ -71,7 +71,8 @@ class Home : AppCompatActivity() {
         }
 
         btnProfile.setOnClickListener {
-            val intent: Intent = Intent(this, perfilUsuario::class.java)
+            var intent: Intent = Intent(this, perfilUsuario::class.java)
+            intent.putExtra("tipoMascota","Interes")
             startActivity(intent)
         }
 
@@ -109,7 +110,6 @@ class Home : AppCompatActivity() {
         lista.add(Mascota(R.drawable.pechocho,"PECHOCHO", "Adulto, 3 años", "Macho", "gato", "mediano","Negro con blanco","juguetón,enérgico,chipilon.","Amigable con los niños, perros y gatos","297",R.drawable.dross1,R.drawable.dross2,R.drawable.dross3,R.drawable.dross4,R.drawable.dross5,R.drawable.dross6,"desde el principio de los tiempos"))
         lista.add(Mascota(R.drawable.daisy,"DAISY", "Adulto, 3 años", "Hembra", "perro", "mediano","Negro con blanco","juguetón,enérgico,chipilon.","Amigable con los niños, perros y gatos","250",R.drawable.dross1,R.drawable.dross2,R.drawable.dross3,R.drawable.dross4,R.drawable.dross5,R.drawable.dross6,"desde el principio de los tiempos"))
         lista.add(Mascota(R.drawable.dross_perfil,"DROSS", "Adulto, 3 años", "Macho", "perro,mestizo", "mediano","Negro con blanco","juguetón,enérgico,chipilon.","Amigable con los niños, perros y gatos","185",R.drawable.dross1,R.drawable.dross2,R.drawable.dross3,R.drawable.dross4,R.drawable.dross5,R.drawable.dross6,"desde el principio de los tiempos"))
-
     }
 
     class AdaptadorMascotas: BaseAdapter {

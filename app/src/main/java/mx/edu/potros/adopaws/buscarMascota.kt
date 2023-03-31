@@ -70,7 +70,8 @@ class buscarMascota : AppCompatActivity() {
         }
 
         btnProfile.setOnClickListener {
-            val intent: Intent = Intent(this, perfilUsuario::class.java)
+            var intent: Intent = Intent(this, perfilUsuario::class.java)
+            intent.putExtra("tipoMascota","Interes")
             startActivity(intent)
         }
     }

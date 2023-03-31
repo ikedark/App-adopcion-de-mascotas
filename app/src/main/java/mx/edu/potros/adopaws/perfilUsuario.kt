@@ -26,11 +26,13 @@ var lista: ArrayList<Mascota> = ArrayList<Mascota>()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perfil_usuario)
 
-        agregarMascota()
 
         var tv_nombre: TextView = findViewById(R.id.tv_nombre_usuario)
         var iv_perfil: ImageView = findViewById(R.id.iv_perfil)
 
+        var tipoMascota : String? = intent.getStringExtra("tipoMascota")
+
+        agregarMascota(tipoMascota)
         var gridview: GridView = findViewById(R.id.gvPerfilUsuario) as GridView
 
         var adaptador: Home.AdaptadorMascotas = Home.AdaptadorMascotas(this, lista)
@@ -59,22 +61,37 @@ var lista: ArrayList<Mascota> = ArrayList<Mascota>()
         val btnConfig: ImageButton = findViewById(R.id.btn_Config)
 
         btnHome.setOnClickListener {
-            val intent: Intent = Intent(this, Home::class.java)
+            var intent: Intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
 
         btnProfile.setOnClickListener {
-            val intent: Intent = Intent(this, perfilUsuario::class.java)
+            var intent: Intent = Intent(this, perfilUsuario::class.java)
             startActivity(intent)
         }
 
         btnAvisos.setOnClickListener {
-            val intent: Intent = Intent(this, buscarMascota::class.java)
+            var intent: Intent = Intent(this, buscarMascota::class.java)
             startActivity(intent)
         }
 
         btnConfig.setOnClickListener {
-            val intent: Intent = Intent(this, configuracionGeneral::class.java)
+            var intent: Intent = Intent(this, configuracionGeneral::class.java)
+            startActivity(intent)
+        }
+
+        val btnAdopcion: Button = findViewById(R.id.btn_mascota_adopcion)
+        val btnInteres: Button = findViewById(R.id.btn_mascota_interes)
+
+        btnAdopcion.setOnClickListener {
+            var intent: Intent = Intent(this, perfilUsuario::class.java)
+            intent.putExtra("tipoMascota","Adopcion")
+            startActivity(intent)
+        }
+
+        btnInteres.setOnClickListener {
+            var intent: Intent = Intent(this, perfilUsuario::class.java)
+            intent.putExtra("tipoMascota","Interes")
             startActivity(intent)
         }
 
@@ -100,14 +117,23 @@ var lista: ArrayList<Mascota> = ArrayList<Mascota>()
         }
     }*/
 
-    fun agregarMascota() {
-        lista.add(Mascota(R.drawable.tiana,"TIANA", "Adulto, 3 años", "Hembra", "gato", "mediano","Negro con blanco","juguetón,enérgico,chipilon.","Amigable con los niños, perros y gatos","183",R.drawable.dross1,R.drawable.dross2,R.drawable.dross3,R.drawable.dross4,R.drawable.dross5,R.drawable.dross6,"desde el principio de los tiempos"))
-        lista.add(Mascota(R.drawable.bruno,"BRUNO", "Adulto, 3 años", "Macho", "perro", "mediano","Negro con blanco","juguetón,enérgico,chipilon.","Amigable con los niños, perros y gatos","230",R.drawable.dross1,R.drawable.dross2,R.drawable.dross3,R.drawable.dross4,R.drawable.dross5,R.drawable.dross6,"desde el principio de los tiempos"))
-        lista.add(Mascota(R.drawable.resaca,"RESACA", "Adulto, 3 años", "Hembra", "perro", "mediano","Negro con blanco","juguetón,enérgico,chipilon.","Amigable con los niños, perros y gatos","108",R.drawable.dross1,R.drawable.dross2,R.drawable.dross3,R.drawable.dross4,R.drawable.dross5,R.drawable.dross6,"desde el principio de los tiempos"))
-        lista.add(Mascota(R.drawable.toribio,"TORIBIO", "Adulto, 3 años", "Macho", "perro", "mediano","Negro con blanco","juguetón,enérgico,chipilon.","Amigable con los niños, perros y gatos","321",R.drawable.dross1,R.drawable.dross2,R.drawable.dross3,R.drawable.dross4,R.drawable.dross5,R.drawable.dross6,"desde el principio de los tiempos"))
-        lista.add(Mascota(R.drawable.pechocho,"PECHOCHO", "Adulto, 3 años", "Macho", "gato", "mediano","Negro con blanco","juguetón,enérgico,chipilon.","Amigable con los niños, perros y gatos","297",R.drawable.dross1,R.drawable.dross2,R.drawable.dross3,R.drawable.dross4,R.drawable.dross5,R.drawable.dross6,"desde el principio de los tiempos"))
-        lista.add(Mascota(R.drawable.daisy,"DAISY", "Adulto, 3 años", "Hembra", "perro", "mediano","Negro con blanco","juguetón,enérgico,chipilon.","Amigable con los niños, perros y gatos","250",R.drawable.dross1,R.drawable.dross2,R.drawable.dross3,R.drawable.dross4,R.drawable.dross5,R.drawable.dross6,"desde el principio de los tiempos"))
-        lista.add(Mascota(R.drawable.dross_perfil,"DROSS", "Adulto, 3 años", "Macho", "perro,mestizo", "mediano","Negro con blanco","juguetón,enérgico,chipilon.","Amigable con los niños, perros y gatos","185",R.drawable.dross1,R.drawable.dross2,R.drawable.dross3,R.drawable.dross4,R.drawable.dross5,R.drawable.dross6,"desde el principio de los tiempos"))
+    fun agregarMascota(option: String?) {
+        when(option){
+            "Interes" -> {
+                lista.add(Mascota(R.drawable.canela,"CANELA", "Adulto, 3 años", "Hembra", "perro", "grande","Blanco con café","juguetón,enérgico,chipilon.","Amigable con los niños, perros y gatos","132",R.drawable.canela,R.drawable.dross2,R.drawable.dross3,R.drawable.dross4,R.drawable.dross5,R.drawable.dross6,"desde el principio de los tiempos"))
+                lista.add(Mascota(R.drawable.demostenes,"DEMOSTENES", "Adulto, 3 años", "Macho", "gato", "mediano","Negro","juguetón,enérgico,chipilon.","Amigable con los niños, perros y gatos","421",R.drawable.demostenes,R.drawable.dross2,R.drawable.dross3,R.drawable.dross4,R.drawable.dross5,R.drawable.dross6,"desde el principio de los tiempos"))
+                lista.add(Mascota(R.drawable.bethooven,"BEETHOVEN", "Adulto, 3 años", "Macho", "perro", "mediano","Negro con blanco y café","juguetón,enérgico,chipilon.","Amigable con los niños, perros y gatos","163",R.drawable.bethooven,R.drawable.dross2,R.drawable.dross3,R.drawable.dross4,R.drawable.dross5,R.drawable.dross6,"desde el principio de los tiempos"))
+                lista.add(Mascota(R.drawable.michi,"MICHI", "Adulto, 3 años", "Hembra", "gato", "mediano","Anaranjado","juguetón,enérgico,chipilon.","Amigable con los niños, perros y gatos","512",R.drawable.dross1,R.drawable.dross2,R.drawable.dross3,R.drawable.dross4,R.drawable.dross5,R.drawable.dross6,"desde el principio de los tiempos"))
+            }
+            "Adopcion" -> {
+                lista.add(Mascota(R.drawable.torpedo,"TORPEDO", "Adulto, 3 años", "Macho", "gato", "mediano","Blanco con café","juguetón,enérgico,chipilon.","Amigable con los niños, perros y gatos","162",R.drawable.canela,R.drawable.dross2,R.drawable.dross3,R.drawable.dross4,R.drawable.dross5,R.drawable.dross6,"desde el principio de los tiempos"))
+                lista.add(Mascota(R.drawable.madonna,"MADONNA", "Adulto, 3 años", "Hembra", "gato", "mediano","Negro","juguetón,enérgico,chipilon.","Amigable con los niños, perros y gatos","199",R.drawable.demostenes,R.drawable.dross2,R.drawable.dross3,R.drawable.dross4,R.drawable.dross5,R.drawable.dross6,"desde el principio de los tiempos"))
+                lista.add(Mascota(R.drawable.romina,"ROMINA", "Adulto, 3 años", "Hembra", "gato", "mediano","Negro con blanco y café","juguetón,enérgico,chipilon.","Amigable con los niños, perros y gatos","201",R.drawable.bethooven,R.drawable.dross2,R.drawable.dross3,R.drawable.dross4,R.drawable.dross5,R.drawable.dross6,"desde el principio de los tiempos"))
+                lista.add(Mascota(R.drawable.benito,"BENITO", "Adulto, 3 años", "Macho", "perro", "chico","Anaranjado","juguetón,enérgico,chipilon.","Amigable con los niños, perros y gatos","94",R.drawable.dross1,R.drawable.dross2,R.drawable.dross3,R.drawable.dross4,R.drawable.dross5,R.drawable.dross6,"desde el principio de los tiempos"))
+
+            }
+        }
+
 
     }
 
