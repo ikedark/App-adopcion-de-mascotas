@@ -13,6 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AdoPaws"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+
         <activity
             android:name=".seleccionarUser"
             android:exported="false" />
@@ -46,6 +51,15 @@
         <activity
             android:name=".Perfil_Mascota"
             android:exported="false" />
+        <activity
+            android:name=".MapaPrueba"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Login"
             android:exported="true"
