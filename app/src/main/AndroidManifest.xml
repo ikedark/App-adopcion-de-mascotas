@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -13,6 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AdoPaws"
         tools:targetApi="31">
+
         <activity
 <<<<<<< HEAD
             android:name=".seleccionarUser"
@@ -64,6 +67,13 @@
         <activity
             android:name=".Perfil_Mascota"
             android:exported="false" />
+
+        <activity
+            android:name=".MapaPrueba"
+            android:exported="true">
+
+        </activity>
+
         <activity
             android:name=".Login"
             android:exported="true"
@@ -91,11 +101,17 @@
         </activity>
 
         <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+
+        <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
         <meta-data
             android:name="com.facebook.sdk.ClientToken"
             android:value="@string/facebook_client_token" />
+
     </application>
+
 
 </manifest>

@@ -73,6 +73,11 @@ class Buscar_Mascota : AppCompatActivity() {
             startActivity(intent)
         }
 
+        btnMapa.setOnClickListener {
+            val intent: Intent = Intent( this, MapaPrueba::class.java)
+            startActivity(intent)
+        }
+
 //        btnMensajes.setOnClickListener {
 //            val intent: Intent = Intent(this, Mensajes::class.java)
 //            startActivity(intent)
