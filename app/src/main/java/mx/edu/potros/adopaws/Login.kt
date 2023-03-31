@@ -45,7 +45,7 @@ class Login : AppCompatActivity() {
         }
 
         btn_iniciarSesion.setOnClickListener {
-            val intent: Intent = Intent(this, seleccionarUser::class.java)
+            val intent: Intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
         // Google things
