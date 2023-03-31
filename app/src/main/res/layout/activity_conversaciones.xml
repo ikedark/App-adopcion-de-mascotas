@@ -6,38 +6,70 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white_smoak"
-    tools:context=".Home">
-    
+    tools:context=".conversaciones">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/salmon"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:background="@color/salmon">
 
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="30dp"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="100dp"
-            android:src="@drawable/logo_texto_blanco"/>
-
-
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/conversaciones"
+            android:textColor="@color/white_smoak"
+            android:textSize="30sp"/>
 
     </LinearLayout>
 
-    <GridView
-        android:id="@+id/gridView"
+    <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="662dp"
-        android:numColumns="1"
-        android:paddingHorizontal="10dp"/>
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_gravity="center"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
 
+        <Button
+            android:id="@+id/btn_comunidades"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/comunidades"
+            android:textColor="@color/brick"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/btn_privados"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/privados"
+            android:textColor="@color/brick"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"/>
+
+    </GridLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar otras comunidades"
+        android:gravity="center"
+        android:textColor="@color/black"/>
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:numColumns="5"
-        android:layout_marginTop="5dp"
         android:layout_gravity="center"
         android:background="@color/orange">
 
