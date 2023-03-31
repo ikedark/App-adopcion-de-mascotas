@@ -62,8 +62,7 @@
             android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
             android:layout_marginRight="@dimen/perfilMascota_buttons_margin"
             android:layout_gravity="fill_horizontal"
-            android:layout_columnWeight="1"
-            android:entries="@array/Día" />
+            android:layout_columnWeight="1" />
 
         <Spinner
             android:id="@+id/sp_mes"
@@ -73,8 +72,7 @@
             android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
             android:layout_marginRight="@dimen/perfilMascota_buttons_margin"
             android:layout_gravity="fill_horizontal"
-            android:layout_columnWeight="1"
-            android:entries="@array/Mes" />
+            android:layout_columnWeight="1" />
 
         <Spinner
             android:id="@+id/sp_año"
@@ -84,8 +82,7 @@
             android:paddingHorizontal="@dimen/perfilMascota_buttons_paddings"
             android:layout_marginRight="@dimen/perfilMascota_buttons_margin"
             android:layout_gravity="fill_horizontal"
-            android:layout_columnWeight="1"
-            android:entries="@array/Año" />
+            android:layout_columnWeight="1"/>
 
     </GridLayout>
 

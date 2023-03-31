@@ -72,6 +72,7 @@
             android:layout_marginRight="10dp"
             />
         <ImageButton
+            android:id="@+id/btn_buscarMascota"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginTop="5dp"

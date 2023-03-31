@@ -12,6 +12,20 @@
         android:theme="@style/Theme.AdoPaws"
         tools:targetApi="31">
         <activity
+            android:name=".Emergente_Gato"
+            android:exported="false"
+            android:theme="@style/Theme.AdoPaws.Neron"/>
+        <activity
+            android:name=".Emergente_Espanto"
+            android:exported="false"
+            android:theme="@style/Theme.AdoPaws.Neron" />
+        <activity
+            android:name=".Encontrar_Mascota"
+            android:exported="false" />
+        <activity
+            android:name=".Buscar_Mascota"
+            android:exported="false" />
+        <activity
             android:name=".Contacto_Mascota"
             android:exported="false" />
         <activity

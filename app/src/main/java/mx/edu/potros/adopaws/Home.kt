@@ -15,6 +15,13 @@ class Home : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+        val buttonBuscarMascota: ImageButton = findViewById(R.id.btn_buscarMascota)
+
+        buttonBuscarMascota.setOnClickListener(){
+            var intent: Intent =Intent(this,Buscar_Mascota::class.java)
+            startActivity(intent)
+        }
+
         agregarMascota()
 
         var gridview: GridView = findViewById(R.id.gridView) as GridView
